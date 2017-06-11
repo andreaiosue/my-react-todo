@@ -24,7 +24,7 @@ describe('AddTodo', () => {
   });
 
   it('should not call onAddTodo if invalid text entered', () => {
-    var text = 'have fun';
+    var text = '';
     var spy = expect.createSpy();
     var addTodo = TestUtils.renderIntoDocument(<AddTodo onAddTodo={spy}/>);
     var $el = $(ReactDOM.findDOMNode(addTodo));
