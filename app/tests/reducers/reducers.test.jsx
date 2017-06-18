@@ -19,7 +19,7 @@ describe('Reducers', () => {
   describe('showCompletedReducer', () => {
     it('should toggle showCompleted', () => {
       var action = {
-        type: 'TOGGLE_SHOW_COMLPETED'
+        type: 'TOGGLE_SHOW_COMPLETED'
       };
       var res = reducers.showCompletedReducer(df(false), df(action));
 
